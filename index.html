@@ -1,3 +1,59 @@
-<p>Hello there</p>
-<p>This is Bellahra </p>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bell | Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/profile.png" alt="头像" class="profile-img">
+            <h1>Bell</h1>
+            <p class="tagline">About Me</p>
+        </header>
 
+        <section class="about">
+            <h2>TBC</h2>
+            <p>I will write something later</p>
+        </section>
+
+        <section class="projects">
+            <h2>My work</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Projects</h3>
+                    <p>Description</p>
+                    <a href="#" class="btn">Details</a>
+                </div>
+                <div class="project-card">
+                    <h3>Other things</h3>
+                    <p>Despription</p>
+                    <a href="#" class="btn">Details</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <div class="social-links">
+                <a href="https://github.com/Bellahra" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:1947342664@qq.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; <span id="year"></span> All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // 自动更新年份
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
